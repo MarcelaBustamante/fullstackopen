@@ -1,5 +1,3 @@
-
-```mermaid
 sequenceDiagram
     participant browser
     participant server
@@ -15,7 +13,7 @@ sequenceDiagram
     deactivate server
 
     browser->>server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
-    activate server
+    activate server 
     server-->>browser: the css file
     deactivate server
 
@@ -32,4 +30,3 @@ sequenceDiagram
     deactivate server
 
     Note right of browser: The browser executes the callback function that renders the notes
-    ```
